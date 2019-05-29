@@ -14,7 +14,7 @@ Lancer deux containers HTTP et script avec une page personnalisée
 
 ```npm run deploy-docker```
 
-> Go to [localhost:8081]('http://localhost:8081/')
+> Go to [localhost:8081](http://localhost:8081/)
 
 ### Lancer le container server
 
@@ -22,4 +22,4 @@ Lancer deux containers HTTP et script avec une page personnalisée
 
 ```npm run deploy-docker```
 
-> Go to [localhost:8082]('http://localhost:8082/')
+> Go to [localhost:8082](http://localhost:8082/)

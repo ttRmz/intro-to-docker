@@ -6,4 +6,4 @@ Lancer un containers HTTP avec une page personnalisée
 
 ```npm run deploy-docker```
 
-> Go to [localhost:8080]('http://localhost:8080/')
+> Go to [localhost:8080](http://localhost:8080/)
