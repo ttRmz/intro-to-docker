@@ -1,0 +1,24 @@
+.student {
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+  padding: 22px;
+  color: #282C35;
+  background-color: #61DAFB;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: box-shadow 75ms linear;
+  box-shadow: 0 0 0 0 rgba(97, 218, 251, 0)
+}
+
+.student:hover {
+  box-shadow: 0 0 25px 0 rgba(97, 218, 251, 0.3);
+}
+
+.student span {
+  font-size: 16px
+}
+
+.student h5 {
+  margin: 0;
+}
