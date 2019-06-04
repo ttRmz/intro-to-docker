@@ -2,22 +2,15 @@
 
 Lancer trois containers HTTP, script et BDD avec une page personnalisée
 
-## Setup
+## Requirements 🔩
 
-`cd client && npm install`
+- [nodejs](https://nodejs.org/en/)
+- [docker](https://hub.docker.com/)
 
-`cd server && npm install`
+## Setup 🚀
 
-### Lancer les containers server & mongo
-
-`cd server`
-
-`npm run deploy-docker`
-
-### Lancer le container client
-
-`cd client`
-
-`npm run deploy-docker`
+```bash
+sh ./launch.sh
+```
 
 > Go to [localhost:4000](http://localhost:4000/)

@@ -1,0 +1,26 @@
+# docker-compose build
+# docker-compose up -d
+# docker-compose down
+
+version: '3'
+
+services:
+  database:
+    image: mongo:4.1
+    container_name: 'tp-DB'
+  script:
+    build: ./server
+    image: tp-api:0.0.1
+    links:
+      - database
+    depends_on:
+      - database
+    ports:
+      - '8888:3000'
+    container_name: 'tp-API'
+  http:
+    build: ./client
+    image: tp-client:0.0.1
+    ports:
+      - '4000:80'
+    container_name: 'tp-FRONT'

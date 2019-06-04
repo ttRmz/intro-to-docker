@@ -3,10 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "deploy-docker-db": "docker run --rm --name TP_03-DB -d mongo:latest",
-    "deploy-docker-api": "docker run -it --rm --name TP_03-API -p 8888:3000 --link TP_03-DB:MONGO_DB -v $(pwd):/usr/src/app -w /usr/src/app node:8 node ./bin/www",
-    "deploy-docker": "npm run deploy-docker-db && npm run deploy-docker-api"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",

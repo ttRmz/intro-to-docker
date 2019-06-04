@@ -11,8 +11,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy-docker": "npm run build && docker container run --rm --name TP_03-CLIENT -p 4000:80 -v $(pwd)/build:/usr/share/nginx/html nginx:latest"
+    "eject": "react-scripts eject"
   },
   "browserslist": {
     "production": [
