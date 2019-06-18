@@ -1,0 +1,49 @@
+#!/usr/bin/env node
+
+/* eslint-disable node/shebang */
+
+/**
+ * Module dependencies.
+ */
+
+var app = require('../app');
+var mongodb = require('mongodb');
+var CONFIG = require('../config')
+
+const STUDENTS = [{
+  id: mongodb.ObjectID,
+  name: 'Tristan',
+  family_name: 'Ramirez',
+  class: "B3B",
+}, {
+  id: mongodb.ObjectID,
+  name: 'Marc',
+  family_name: 'Tims',
+  class: "M2B",
+}, {
+  id: mongodb.ObjectID,
+  name: 'Jean',
+  family_name: 'Miche',
+  class: "B2A",
+}]
+
+mongodb.MongoClient.connect(CONFIG.MONGO_URL, {
+  useNewUrlParser: true
+}, (err, client) => {
+  if (err) throw err;
+  db = client.db("mydb")
+  initDB(client.db("mydb"))
+  app.listen(3000, () => console.log('Connected ✅'))
+});
+
+// Init DB with some data
+function initDB(db) {
+  db.createCollection('Students', (err, res) => {
+    if (err) throw err;
+    console.log('Collection successfully created')
+    db.collection('Students').insertMany(STUDENTS, (err, res) => {
+      if (err) throw err
+      console.log('Student successfully inserted')
+    })
+  })
+}

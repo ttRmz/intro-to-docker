@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Student /> should render a student with a class 1`] = `
+<div>
+  <div
+    class="student"
+  >
+    <h5>
+      Foo
+       
+      Bar
+    </h5>
+    <span>
+      A1
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<Student /> should render a student without class, then show "NA" instead 1`] = `
+<div>
+  <div
+    class="student"
+  >
+    <h5>
+      Foo
+       
+      Bar
+    </h5>
+    <span>
+      NA
+    </span>
+  </div>
+</div>
+`;
