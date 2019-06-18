@@ -25,9 +25,6 @@ const STUDENTS = [{
   class: "B2A",
 }]
 
-// Connect to the db then insert some values
-console.log('PROCESS', process.env)
-
 mongodb.MongoClient.connect(CONFIG.MONGO_URL, {
   useNewUrlParser: true
 }, (err, client) => {
