@@ -23,4 +23,10 @@ npm test
 npm run lint
 ```
 
+## Format code ✨
+
+```bash
+npm run format
+```
+
 > Go to [localhost:4000](http://localhost:4000/)
